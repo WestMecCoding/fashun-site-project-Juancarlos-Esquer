@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHUN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            max-width: 1920px;
+        }
+#menu {
+    width:0px;
+    height:0px;
+}
+        @media (min-width: 0px) and (max-width: 767px) {
+            div#splash-image {
+                background-image: url('./768_assets/fashun_banner_768.png');
+                background-size: cover;
+                width: 100%;
+                height: 40vh;
+                background-position:top left;
+            }
+            #Hamburger {
+                background-image: url('768_assets/Hamburger_menu.png');
+                background-size: cover;
+                display:block;
+                position:absolute;
+                top:0.50vw;
+                right:1vw;
+                width:10%;
+                height:10vh;
+            }
+            #style-background {
+             position:absolute;
+                top:50vw;
+                left:35vw;
+                background-image: linear-gradient(orange, white);
+            }
+            #shoe {
+                position:absolute;
+                top:100vw;
+                left:25vw;
+                background-image:linear-gradient(orange,white);
+            }
+            h1{
+                text-align:center;
+                font-size:3rem;
+            }
+            
+        }
+
+        @media (min-width: 768px) and (max-width: 1279px) {
+            div#splash-image {
+                background-image: url('./1280_assets/fashun_banner_1280.png');
+                background-size: cover;
+                width: 100%;
+                height: 50vh;
+                background-position: center center;
+            }
+        }
+
+        @media (min-width: 1280px) and (max-width: 1920px) {
+            div#splash-image {
+                background-image: url('./1920_assets/fashun_banner_1920.jpg');
+                background-size: cover;
+                width: 100%;
+                /* max-width: 1920px; */
+                height: 50vh;
+                background-position: top center 
+            }
+        }
+
+        #logo {}
+
+        header {}
+
+        header nav {}
+
+        header nav a {}
+
+        #logo h1 {
+            /* font-family merriweather from Google Fonts */
+
+            font-weight: 600;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <h1>FASHUN</h1>
+            </div>
+            <div id="Hamburger"></div>
+            <div id="style-background">
+                <img src="./768_assets/fashun_jacket_768.png" />
+            </div>
+            <div id="shoe">
+                <img src="./768_assets/fashun_shoe_768.png" />
+            </div>
+        </header>
+        <div id="splash-image"></div>
+        <main>
+            <div class="sale-items"></div>
+        </main>
+    </div>
+</body>
+
+</html>
